@@ -1,61 +1,84 @@
-# **AI Usage Report – HW2**
+# 🤖 AI Usage Report – Assignment 3
 
-## **Tools Used**  
-For Homework 2, I continued using **ChatGPT** as my main AI assistant to further develop and enhance my personal portfolio website. This phase focused on implementing more **interactive features**, improving **code structure**, and refining **user experience**.  
+## 🛠️ Tools Used
+For Assignment 3, I used **ChatGPT** as my primary AI assistant to help expand and enhance my personal portfolio website.  
+This phase focused on integrating **external APIs**, improving **state management**, implementing **complex logic**, and refining the overall **UI/UX** experience.
 
-The AI tool helped me build new features including:
-- A **dynamic typing greeting** that loops between motivational sentences.
-- A **personalized name input** that updates greetings instantly and stores data in localStorage.
-- An **email validation system** that checks for proper format and provides domain suggestions such as *@gmail.com* and *@hotmail.com*.
-- A **funny “message sent” popup** that makes the user experience more engaging.
-- A **scroll-to-top arrow** for better navigation.
-- A **dark/light theme toggle** that remembers user preference.
-
-Beyond coding, ChatGPT also guided me in refactoring JavaScript to avoid lag, improving animation timing, and writing cleaner and more efficient CSS.
+AI supported me in building several key features, including:
+- 🐙 **GitHub API integration** to display my latest repositories dynamically  
+- 💬 **Random Quote API** with a smart **local fallback system** when the API fails  
+- 🔎 **Project filtering & sorting** using dataset attributes and saved user state  
+- 🎨 **Improved project card layout**, spacing, and featured-card behavior  
+- 🕒 **Visit counter** and **time-on-site timer** using `localStorage`  
+- 🌗 Enhancements to the theme toggle and persistent user preferences  
+- 📄 Assistance in writing and structuring documentation files  
 
 ---
 
-## **Benefits**  
-Using AI in this stage provided me with both technical and creative advantages.  
+## 🚀 Benefits
+Using AI during this phase boosted both my productivity and understanding of web development concepts.  
 It helped me:
-- Understand how to manage **DOM events and animations** efficiently.  
-- Learn **modular JavaScript design** by organizing code into reusable functions.  
-- Master **UI feedback systems** (popups, smooth scrolls, transitions).  
-- Implement **data persistence** using localStorage for theme and user information.  
-- Enhance the **overall polish and interactivity** of the website with less trial and error.  
 
-Working alongside ChatGPT accelerated my learning curve in web development. I now have a stronger grasp of combining HTML, CSS, and JavaScript to create cohesive, responsive, and fun user interfaces.
+- Learn how to integrate **REST APIs** using `fetch`, `async/await`, and proper error handling  
+- Create a **fallback system** to ensure reliability even when external APIs fail  
+- Improve my knowledge of **state management** using `localStorage`  
+- Understand how to structure JavaScript into **modular, reusable functions**  
+- Build cleaner and more responsive layouts using CSS Grid and Flexbox  
+- Solve UI spacing and alignment issues more efficiently  
+- Strengthen my ability to debug and optimize client-side code  
 
----
-
-## **Challenges**  
-While AI support was helpful, it also required careful oversight. Some of the suggestions were either **too complex** or caused **performance issues**, such as lag in the typing animation or duplicated intervals when changing names.  
-To solve these, I had to:
-- Rework the animation logic for better performance.  
-- Add resets and condition checks to avoid overlapping timers.  
-- Simplify CSS transitions and avoid redundant declarations.  
-
-This experience reinforced the importance of **debugging and testing** even with AI-generated code. I learned that understanding why something works is more valuable than simply copying it.
+AI made the development process smoother, but every feature was tested, understood, and customized by me.
 
 ---
 
-## **Learning Outcomes**  
-Throughout this phase, I achieved several key learning outcomes:
-- I became confident in **validating form inputs** using regular expressions (regex).  
-- I learned how to manage **UI states** effectively with event listeners and localStorage.  
-- I improved my ability to **refactor and debug** JavaScript for better performance.  
-- I developed a sense of **user-centered design**, focusing on accessibility, readability, and engagement.  
+## ⚠️ Challenges
+AI assistance was helpful, but required careful oversight.  
+Some challenges I faced:
 
-Most importantly, I gained the habit of thinking like both a **developer** and a **designer** — building features that are not only functional but also enjoyable to use.
+- Certain suggested quote APIs had **CORS issues** or did not work on localhost  
+- Some code needed to be adapted to match my existing HTML structure  
+- Filtering + sorting required multiple revisions to work smoothly together  
+- Visual layout changes sometimes caused spacing or alignment inconsistencies  
+
+To solve these issues, I had to:
+- Replace unstable APIs with better alternatives  
+- Add a **local fallback** quote list  
+- Debug DOM updates and grid behavior  
+- Adjust CSS padding, gap, and alignment manually  
+
+This improved my debugging skills and understanding of front-end logic.
 
 ---
 
-## **Responsible Use**  
-I used ChatGPT responsibly by treating it as a **mentor and coding assistant**, not as a replacement for learning. Every suggestion was reviewed, tested, and customized to fit the project’s purpose.  
-The AI accelerated the workflow but never took away my personal contribution or creativity. Each piece of code was written with understanding and intent, ensuring that the final result truly represented **my own learning progress and technical growth**.
+## 🎓 Learning Outcomes
+Through this assignment, I learned how to:
+
+- Integrate **external APIs** into a front-end website  
+- Handle API failures gracefully and design a **fallback strategy**  
+- Manage multiple UI states using `localStorage`  
+- Apply **complex logic** (filtering, sorting, timers) cleanly  
+- Debug and optimize JavaScript for better performance  
+- Write clearer, user-focused components with responsive design in mind  
+
+Most importantly, I gained confidence in building more dynamic and interactive web applications.
 
 ---
 
-## **Reflection**  
-This project phase demonstrated the true power of human–AI collaboration. AI provided the tools and ideas, while I provided the direction, decision-making, and creativity.  
-By balancing both, I was able to create a **smarter, smoother, and more dynamic** portfolio website that reflects not just technical ability, but also adaptability and a continuous learning mindset.
+## ✅ Responsible Use
+I used ChatGPT responsibly as a **learning tool**, not as a replacement for understanding.  
+Every suggestion was:
+
+- Reviewed carefully  
+- Tested in my code  
+- Modified to fit my needs  
+- Understood before being added  
+
+The final work represents my own decisions, creativity, and implementation, enhanced through AI guidance.
+
+---
+
+## 📝 Reflection
+This assignment showed me how effective human–AI collaboration can be.  
+AI helped me think faster and solve problems creatively, while I controlled the logic, debugging, and final decisions.  
+
+The result is a more **dynamic**, **reliable**, and **professional** portfolio website that reflects my growth as a developer.
