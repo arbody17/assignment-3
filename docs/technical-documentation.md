@@ -1,25 +1,45 @@
-# 🌐 Personal Portfolio  
+# 🌐 Personal Portfolio – Assignment 3  
 
 A personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.  
-It showcases my projects, skills, and contact information in a modern, interactive, and responsive layout.  
+This version (Assignment 3) expands the project with **API integrations**, **advanced logic**, enhanced **state management**, and a more polished and dynamic user experience.  
+
+The website showcases my projects, skills, and contact information through a modern, interactive, and fully responsive design.
 
 ---
 
 ## ✨ Features  
 
-- 📱 **Responsive Design** — Uses CSS Grid and Flexbox for smooth adaptability across all devices.  
-- 🌗 **Dark/Light Theme Toggle** — Switches instantly and saves user preference using `localStorage`.  
-- ⌨️ **Typing & Deleting Animation** — Dynamic greeting that loops motivational messages and personalized name display.  
-- 😎 **Personalized Greeting** — Stores the visitor’s name locally and updates the greeting dynamically.  
-- 📧 **Email Validation & Suggestions** — Validates email format and provides quick domain suggestions (e.g., `@gmail.com`, `@hotmail.com`).  
-- 😂 **Funny “Message Sent” Popup** — Displays a success message with a friendly joke after submitting the contact form.  
-- 🧭 **Smooth Scroll-to-Top Arrow** — Instantly scrolls back to the top of the page when clicked.  
-- 💡 **Read More/Less Toggle** — Expands or collapses the “About” section interactively.  
-- 🖼️ **Project Card Hover Animations** — Interactive cards that highlight upon hovering.  
+### 🎨 UI & Interactivity  
+- 📱 **Responsive Design** — Built using CSS Grid & Flexbox for full compatibility across phones, tablets, and desktops.  
+- 🌗 **Dark/Light Theme Toggle** — Saves user preference using `localStorage` so the website remembers your theme.  
+- ⌨️ **Typing & Deleting Animation** — Dynamic greeting message with looping motivational phrases and personalized name support.  
+- 😎 **Personalized Greeting** — Stores the visitor’s name and updates the greeting instantly on the next visit.  
+- 💡 **Read More / Read Less Toggle** — Expands or collapses the About Me section smoothly.  
+- 🖼️ **Improved Project Cards** — Hover animations, larger images, better spacing, and featured-card design when filtering.  
+- 🔝 **Scroll-to-Top Button** — Quickly returns the user to the top of the page.  
+
+### 🧠 Logic & State Management  
+- 🔎 **Project Filtering & Sorting** — Filter by category (Web, AI, Research) and sort by newest/oldest using `data-*` attributes.  
+- 💾 **Saved Preferences** — Filter & sort selections are saved using `localStorage`.  
+- ⏱️ **Time-on-Site Timer** — Shows how long a visitor has been on the website.  
+- 👣 **Visit Counter** — Counts how many times the visitor has opened the website.  
+
+### 🌍 External API Integrations  
+- 🐙 **GitHub API Integration** — Displays my latest repositories with description, stars count, and update date.  
+- 💬 **Inspirational Quote Box** — Fetches a random quote from a quotes API.  
+  - If the API fails, the site automatically uses a **local fallback quote**, ensuring reliability.  
+- 🔁 **“New Quote” Button** — Allows the user to refresh and load another quote instantly.  
+
+### 📧 Contact Form  
+- ✔️ **Email Validation** using regular expressions  
+- 📩 **Smart Domain Suggestions** such as `@gmail.com`, `@hotmail.com`, `@outlook.com`  
+- 😂 **Funny Popup** after submitting the form, adding a friendly and fun touch  
 
 ---
 
 ## 📂 Folder Structure  
+
+ 
 
 
 
