@@ -406,7 +406,6 @@ textarea:focus {
   padding: 0 0 1rem;
 }
 
-/* Full-width featured card when only one project matches the filter */
 .grid.cards:only-child,
 .grid.cards > .card:only-child {
   grid-template-columns: 1fr !important;
@@ -458,7 +457,7 @@ textarea:focus {
 .quote-text {
   font-size: 1rem;
   font-style: italic;
-  
+
 }
 
 .quote-author {
