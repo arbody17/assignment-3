@@ -16,7 +16,7 @@ It showcases my work, projects, and contact details in a **modern, interactive, 
 
 - 🙋‍♂️ Personalized name greeting stored across visits
 
-- 📝 About Me — “Read More / Read Less” toggle
+- 📝 About Me — “Read More ، Read Less” toggle
 
 - 🖼️ Interactive project cards with hover effects, smooth spacing, and featured layout when filtered
 
