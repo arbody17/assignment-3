@@ -428,3 +428,43 @@ textarea:focus {
   font-size: 1.05rem;
   line-height: 1.8;
 }
+.quote-card {
+  margin: 1.75rem 0 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.quote-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.quote-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.quote-text {
+  font-size: 1rem;
+  font-style: italic;
+  
+}
+
+.quote-author {
+  align-self: flex-end;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+
+}

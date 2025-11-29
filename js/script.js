@@ -1,6 +1,7 @@
 // ============================
 // Theme toggle with localStorage
 // ============================
+const API_KEY = "t19GNRZcyGeaNU40sd3DSQ==w5y0sqiFxJxu1PFv";
 function setupThemeToggle() {
   const root = document.documentElement;
   const themeToggle = document.getElementById("themeToggle");
@@ -339,8 +340,50 @@ function setupVisitStats() {
 }
 
 // ============================
-// Init all
+// Random Quote using API Ninjas
 // ============================
+function setupRandomQuote() {
+  const quoteText = document.getElementById("quoteText");
+  const quoteAuthor = document.getElementById("quoteAuthor");
+  const newQuoteBtn = document.getElementById("newQuoteBtn");
+
+  if (!quoteText || !quoteAuthor || !newQuoteBtn) return;
+
+  async function loadQuote() {
+    try {
+      quoteText.textContent = "Loading a cool quote for you...";
+      quoteAuthor.textContent = "";
+
+      const response = await fetch("https://api.api-ninjas.com/v1/quotes?category=happiness", {
+        headers: { "X-Api-Key": API_KEY }
+      });
+
+      if (!response.ok) {
+        throw new Error("Quote API returned status " + response.status);
+      }
+
+      const data = await response.json();
+
+      if (!data || !data[0] || !data[0].quote) {
+        throw new Error("Quote API returned unexpected data");
+      }
+
+      quoteText.textContent = `“${data[0].quote}”`;
+      quoteAuthor.textContent = data[0].author ? `— ${data[0].author}` : "— Unknown";
+    } catch (error) {
+      console.error(error);
+      quoteText.textContent = "Couldn't load quote. Try again later.";
+      quoteAuthor.textContent = "";
+    }
+  }
+
+  newQuoteBtn.addEventListener("click", loadQuote);
+
+  loadQuote(); // run on page load
+}
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   setupThemeToggle();
   setupTypingGreeting();
@@ -351,4 +394,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setupProjectFilters();
   setupGitHubRepos();
   setupVisitStats();
+  setupRandomQuote(); 
 });
